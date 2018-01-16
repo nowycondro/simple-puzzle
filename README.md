@@ -1,0 +1,1 @@
+# Simple Puzzle With Functional Programming Approach

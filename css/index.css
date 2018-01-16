@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  text-align: center;
+  background: url(../img/background_fotor.jpg) no-repeat center center fixed;
+}
+
+.card-container {
+  cursor: pointer;
+  height: 500px;
+  width: 600px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  transition: all 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.card .back {
+  background: #888;
+  color: #eee;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20%;
+  font-size: 400%;
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: opacity .5s;
+}
+
+.card.flip .back{
+  display: block;
+  opacity: 1;
+}
+
+button.reset {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
